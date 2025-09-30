@@ -2,93 +2,105 @@
 	This is the main HTML file for your web project.
 	Pedagogical comments are included to explain the structure and functioning of each section.
 -->
-<!DOCTYPE html> <!-- Declares the document type and version of HTML -->
-<html lang="en"> <!-- Sets the language of the document to English -->
-	<head>
-		<!--
+<!DOCTYPE html>
+<!-- Declares the document type and version of HTML -->
+<html lang="en">
+  <!-- Sets the language of the document to English -->
+  <head>
+    <!--
 			The <head> contains meta-information about the document, such as encoding, viewport settings for responsiveness,
 			the page title, description for SEO, and links to external resources like CSS.
 		-->
-		<meta charset="UTF-8" /> <!-- Character encoding for the document -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Ensures proper scaling on mobile devices -->
-		<title>My Web Project - WEB ATELIER (UDIT)</title> <!-- Title shown in browser tab -->
-		<meta name="description" content="A student web project for WEB ATELIER (UDIT) course" /> <!-- Description for search engines -->
-		<link rel="stylesheet" href="assets/css/style.css" /> <!-- Link to external CSS file -->
-	</head>
+    <meta charset="UTF-8" />
+    <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ensures proper scaling on mobile devices -->
+    <title>My Web Project - WEB ATELIER (UDIT)</title>
+    <!-- Title shown in browser tab -->
+    <meta
+      name="description"
+      content="A student web project for WEB ATELIER (UDIT) course"
+    />
+    <!-- Description for search engines -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <!-- Link to external CSS file -->
+  </head>
 
-	<body>
-		<!--
+  <body>
+    <!--
 			The <body> contains all the visible content of the web page, including navigation, main content, and footer.
 		-->
-		<!-- Accessibility feature: allows keyboard users to skip directly to the main content -->
-		<a href="#main" class="skip-link">Skip to main content</a>
+    <!-- Accessibility feature: allows keyboard users to skip directly to the main content -->
+    <a href="#main" class="skip-link">Skip to main content</a>
 
-
-			<header>
-				<!--
+    <header>
+      <!--
 					The <header> typically contains the site title, logo, and introductory information.
 					The .container class is used for layout and centering content.
 				-->
-				<div class="container">
-					<h1>My Web Project</h1> <!-- Main heading of the site -->
-					<p>Student Project - WEB ATELIER (UDIT)</p>
-				</div>
-			</header>
+      <div class="container">
+        <h1>My Web Project</h1>
+        <!-- Main heading of the site -->
+        <p>Student Project - WEB ATELIER (UDIT)</p>
+      </div>
+    </header>
 
-
-			<main id="main" class="container">
-				<!--
+    <main id="main" class="container">
+      <!--
 					The <main> element contains the primary content of the page.
 					The id="main" allows the skip link to jump here for accessibility.
 				-->
-				<section>
-					<!-- Section for welcome message and project goals -->
-					<h2>Welcome</h2>
-					<p>
-						This is the starting point for my web project. I will build this incrementally, committing progress after each
-						class.
-					</p>
+      <section>
+        <!-- Section for welcome message and project goals -->
+        <h2>Welcome</h2>
+        <p>
+          This is the starting point for my web project. I will build this
+          incrementally, committing progress after each class.
+        </p>
 
-					<h3>Project Goals</h3>
-					<ul>
-						<li>Create a responsive, accessible website</li>
-						<li>Practice semantic HTML</li>
-						<li>Implement modern CSS techniques</li>
-						<li>Follow web accessibility guidelines</li>
-					</ul>
-				</section>
+        <h3>Project Goals</h3>
+        <ul>
+          <li>Create a responsive, accessible website</li>
+          <li>Practice semantic HTML</li>
+          <li>Implement modern CSS techniques</li>
+          <li>Follow web accessibility guidelines</li>
+        </ul>
+      </section>
 
-				<section>
-					<!-- Section for tracking weekly progress -->
-					<h2>Daily Progress</h2>
-					<p>
-						Check my
-						<a href="https://github.com/[username]/[project-repo]/commits/main">commit history</a>
-						to see weekly progress.
-					</p>
-				</section>
-			</main>
-			
-			<footer>
-				<!--
+      <section>
+        <!-- Section for tracking weekly progress -->
+        <h2>Daily Progress</h2>
+        <p>
+          Check my
+          <a href="https://github.com/[username]/[project-repo]/commits/main"
+            >commit history</a
+          >
+          to see weekly progress.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <!--
 					The <footer> contains copyright and additional navigation links.
 					It is placed at the bottom of the page.
 				-->
-				<div class="container">
-					<p>© 2025 [Your Name] — WEB ATELIER (UDIT) · Web Design (2025 Fall).</p>
-					<p>
-						<a href="https://github.com/ruvebal/web-atelier-udit">Course Framework</a>
-						·
-						<a href="project-brief.md">Project Brief</a>
-					</p>
-				</div>
-			</footer>
+      <div class="container">
+        <p>© 2025 [Your Name] — WEB ATELIER (UDIT) · Web Design (2025 Fall).</p>
+        <p>
+          <a href="https://github.com/ruvebal/web-atelier-udit"
+            >Course Framework</a
+          >
+          ·
+          <a href="project-brief.md">Project Brief</a>
+        </p>
+      </div>
+    </footer>
 
-
-			<!--
+    <!--
 				The <script> tag loads external JavaScript for interactivity or dynamic features.
 				Place scripts at the end of the body for better page load performance.
 			-->
-			<script src="assets/js/main.js"></script>
-		</body>
-		</html>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
