@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Portfolio</title>
+    <!-- Relative links: work locally, break on GitHub Pages -->
+    <link rel="stylesheet" href="../assets/css/index.css" />
+    <link rel="stylesheet" href="../assets/css/exercise-2.css" />
+  </head>
+  <body>
+    <header class="portfolio-header">
+      <div class="container">
+        <h1 class="portfolio-title">My Portfolio</h1>
+        <nav class="portfolio-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About Me</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="portfolio-main">
+      <div class="container">
+        <!-- Projects Section -->
+        <section class="projects-section">
+          <h2>My Projects</h2>
+          <div class="projects-grid">
+            <article class="project-card">
+              <img
+                src="https://picsum.photos/400/300?random=1"
+                alt="Project 1"
+              />
+              <div class="project-content">
+                <h3>Web Project</h3>
+                <p>
+                  Description of the first project developed with modern
+                  responsive techniques.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img
+                src="https://picsum.photos/400/300?random=2"
+                alt="Project 2"
+              />
+              <div class="project-content">
+                <h3>Mobile App</h3>
+                <p>
+                  An application that adapts using CSS Grid and Container
+                  Queries.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">React</span>
+                  <span class="tag">Grid</span>
+                  <span class="tag">API</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img
+                src="https://picsum.photos/400/300?random=3"
+                alt="Project 3"
+              />
+              <div class="project-content">
+                <h3>Dashboard</h3>
+                <p>
+                  Control panel with intrinsic layout using CSS Grid and
+                  Subgrid.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Vue.js</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">Node.js</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="portfolio-footer">
+      <div class="container">
+        <p>
+          &copy; 2025 My Portfolio. Designed with modern responsive techniques.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
