@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intrinsic Portfolio - [Your Name]</title>
+    <!-- Relative links: work locally, break on GitHub Pages -->
+    <link rel="stylesheet" href="../assets/css/index.css" />
+    <link rel="stylesheet" href="../assets/css/exercise-3.css" />
+  </head>
+  <body>
+    <!-- Fixed SPA Navigation -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Scroll Container with Snap -->
+    <div class="scroll-container">
+      <!-- Home Section -->
+      <section id="home" class="section home-section theme-light">
+        <div class="hero-background">
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="https://picsum.photos/768/1024?random=hero-mobile"
+            />
+            <source
+              media="(max-width: 1200px)"
+              srcset="https://picsum.photos/1200/800?random=hero-tablet"
+            />
+            <img
+              src="https://picsum.photos/1920/1080?random=hero-desktop"
+              alt="Hero Background"
+              class="hero-bg-image"
+            />
+          </picture>
+        </div>
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="hero-title">Hello, I'm [Your Name]</h1>
+            <p class="hero-subtitle">
+              Frontend Developer specialized in intrinsic and responsive design
+            </p>
+            <a href="#work" class="cta-button">View my work</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section about-section theme-dark">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-content">
+            <div class="about-image">
+              <picture>
+                <source
+                  media="(max-width: 480px)"
+                  srcset="https://picsum.photos/200/200?random=profile-mobile"
+                />
+                <img
+                  src="https://picsum.photos/300/300?random=profile"
+                  alt="Profile Picture"
+                  class="profile-image"
+                />
+              </picture>
+            </div>
+            <div class="about-text">
+              <p>
+                I'm a passionate frontend developer with expertise in modern CSS
+                techniques, responsive design, and user experience. I love
+                creating fluid, intrinsic designs that adapt beautifully to any
+                device.
+              </p>
+              <p>
+                My skills include HTML5, CSS3, JavaScript, React, Vue.js, and
+                modern CSS features like Grid, Flexbox, Container Queries, and
+                CSS Layers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work Section -->
+      <section id="work" class="section work-section theme-light">
+        <div class="container">
+          <h2 class="section-title">My Projects</h2>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-image-container">
+                <picture>
+                  <source
+                    media="(max-width: 480px)"
+                    srcset="
+                      https://picsum.photos/300/200?random=project1-mobile
+                    "
+                  />
+                  <img
+                    src="https://picsum.photos/400/300?random=project1"
+                    alt="Project 1"
+                    class="project-image"
+                  />
+                </picture>
+                <div class="project-overlay">
+                  <a href="#" class="project-link">View Project</a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Intrinsic Web App</h3>
+                <p>
+                  Modern web application using CSS Grid, Container Queries, and
+                  fluid typography for perfect adaptation.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">CSS Grid</span>
+                  <span class="tag">Container Queries</span>
+                  <span class="tag">Subgrid</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-image-container">
+                <picture>
+                  <source
+                    media="(max-width: 480px)"
+                    srcset="
+                      https://picsum.photos/300/200?random=project2-mobile
+                    "
+                  />
+                  <img
+                    src="https://picsum.photos/400/300?random=project2"
+                    alt="Project 2"
+                    class="project-image"
+                  />
+                </picture>
+                <div class="project-overlay">
+                  <a href="#" class="project-link">View Project</a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Responsive Dashboard</h3>
+                <p>
+                  Data visualization dashboard with scroll-snap sections and
+                  advanced responsive images.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Scroll-snap</span>
+                  <span class="tag">Responsive Images</span>
+                  <span class="tag">CSS Layers</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-image-container">
+                <picture>
+                  <source
+                    media="(max-width: 480px)"
+                    srcset="
+                      https://picsum.photos/300/200?random=project3-mobile
+                    "
+                  />
+                  <img
+                    src="https://picsum.photos/400/300?random=project3"
+                    alt="Project 3"
+                    class="project-image"
+                  />
+                </picture>
+                <div class="project-overlay">
+                  <a href="#" class="project-link">View Project</a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Fluid Design System</h3>
+                <p>
+                  Complete design system with fluid typography, spacing, and
+                  intrinsic layouts.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Design System</span>
+                  <span class="tag">Fluid Typography</span>
+                  <span class="tag">CSS Custom Properties</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section contact-section theme-dark">
+        <div class="container">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="contact-content">
+            <p>Ready to work together? Let's create something amazing!</p>
+            <a href="mailto:your.email@example.com" class="cta-button"
+              >Send me an email</a
+            >
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
