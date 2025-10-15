@@ -1,66 +1,19 @@
-section {
-  height: 90vh;
-  background-color: #c6c6c6;
-}
-section {
-  scroll-margin-top: 70px; /* wysokość menu */
-}
-#site-awwwards {
-  background-color: #c6c6c6;
-}
-#site-webby {
-  background-color: #c6c6c6;
-}
-#site-fwa {
-  background-color: #c6c6c6;
-}
-#site-cssda {
-  background-color: #c6c6c6;
-}
+/* =============================
+   CLEAN LAYOUT FOR OVERLAPPING SECTIONS
+   ============================= */
 
-header {
-  background: #ffffff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-header {
-  margin-top: 70px; /* aby nie wchodziło pod menu */
-}
-
-nav {
+/* Sticky top navigation bar */
+.topnav {
   position: fixed;
   top: 0;
-  z-index: 1000;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-nav ul li {
-  margin-right: 1rem;
-}
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-/* Pasek nawigacyjny */
-.topnav {
-  position: fixed; /* przykleja menu do góry ekranu */
-  top: 0;
-  right: 0;
-  width: 100%; /* menu na całą szerokość strony */
+  left: 0;
+  width: 100%;
   background-color: #333;
-  overflow: hidden;
   display: flex;
-  justify-content: flex-end; /* elementy po prawej stronie */
+  justify-content: flex-end;
+  z-index: 9999;
 }
 
-/* Linki w menu */
 .topnav a {
   color: white;
   text-align: center;
@@ -69,15 +22,23 @@ body {
   display: block;
 }
 
-/* Efekt po najechaniu myszką */
 .topnav a:hover {
   background-color: #575757;
 }
 
+/* Body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #eaeaea;
+}
+
+/* Header */
 header {
-  margin-top: 70px; /* odstęp od przyklejonego menu */
-  padding-left: 40px;
-  background-color: white;
+  margin-top: 80px; /* space for fixed navbar */
+  padding: 40px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
@@ -85,35 +46,91 @@ header h1 {
   color: #8d8686;
   margin-bottom: 10px;
   font-weight: bold;
-}
-
-/* Wyśrodkowanie nagłówka */
-header h1 {
   text-align: left;
-  font-size: 36px;
-  color: #8d8686;
-  margin-bottom: 10px;
-  font-weight: bold;
 }
 
-/* Wyśrodkowanie linków w headerze */
+/* Header nav links */
 header .header-nav ul {
   display: flex;
-  justify-content: center; /* centrowanie poziome */
-  gap: 20px; /* odstęp między linkami */
+  justify-content: center;
+  gap: 20px;
   padding: 0;
   list-style: none;
 }
 
 header .header-nav ul li a {
-  font-size: 0.6rem; /* delikatnie mniejsza czcionka */
+  font-size: 0.8rem;
   color: #333;
   text-decoration: none;
 }
-/* Wyśrodkowanie podtytułów w sekcjach */
+
+/* Section styling */
+section {
+  background-color: #c6c6c6;
+  padding: 60px 40px;
+  margin: 200px auto 80px auto; /* top margin ensures space from previous section */
+  max-width: 1200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  min-height: auto; /* allows sections to grow with content */
+  clear: both;
+}
+
+/* Extra spacing specifically for Webby section */
+#site-webby {
+  margin-top: 250px; /* ensures it starts well below Awwwards section */
+}
+
+/* Headings inside sections */
 section h2 {
-  text-align: center; /* wyśrodkowanie poziome */
-  font-size: 1.8rem; /* możesz zmienić rozmiar czcionki */
-  margin-bottom: 1rem; /* odstęp pod nagłówkiem */
-  color: #333; /* kolor czcionki, możesz zmienić */
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Section images and iframes */
+iframe,
+img {
+  display: block;
+  max-width: 100%;
+  border: none;
+  margin: 20px auto;
+}
+
+/* Section scroll anchor offset (for menu links) */
+:root {
+  --topnav-height: 70px;
+}
+section {
+  scroll-margin-top: calc(var(--topnav-height) + 20px);
+}
+
+/* Optional hover effect for site previews */
+.site-preview img {
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.25s ease;
+}
+
+.site-preview img:hover {
+  transform: scale(1.02);
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive layout for larger screens */
+@media (min-width: 900px) {
+  section {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+main {
+  padding-top: calc(var(--topnav-height) + 10px);
 }
