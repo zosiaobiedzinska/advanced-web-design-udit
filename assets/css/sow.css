@@ -1,5 +1,28 @@
 /* WEB ATELIER (UDIT) - Student Project Template Styles */
 
+/* Demo 7: Matrix Rain Effect (CSS Only) */
+@keyframes matrixRain {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+.bg-matrix {
+  background-color: #000;
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 40px,
+    rgba(0, 255, 0, 0.4) 40px,
+    rgba(0, 255, 0, 0.4) 42px
+  );
+  background-size: 100% 200%;
+  animation: matrixRain 2s linear infinite;
+}
+
 /* Reset and base styles */
 * {
   box-sizing: border-box;
